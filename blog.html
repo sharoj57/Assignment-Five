@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h2>I Love My Love</h2>
+    <header class="sticky">
+        <!-- Navbar Section -->
+        <div class="navbar bg-base-100 bg-[#F9F7F3] top: 0; z-index: 1000;  ">
+            <div class="navbar-start ">
+                <button class="btn bg-[#B4F461] text-black px-8 font-bold" id="blog-link" >Home</button>
+
+            </div>
+            <div class="navbar-center gap-4">
+                <img src="assets/logo.png" alt="Logo">
+                <a class=" text-xl font-bold">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="flex gap-2">
+                            <div><img src="assets/coin.png" alt="Coin"></div>
+                            <div class="stat-value text-xl font-medium" id="account-balance">5500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section class="mb-10">
+
+            <div>
+              <h2 class="text-center text-5xl font-semibold mb-[50px]">Frequently <span class="text-[#69a120]">Asked Questions</span></h2>
+            </div>
+            <div class="hero ">
+              <div class="hero-content flex-col lg:flex-row gap-[98px]">
+                <img
+                  src="assets/faq.png"
+                  class="max-w-sm" />
+                <div>
+                  <div class="collapse collapse-arrow bg-base-200 mb-[13px]">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                      <p> 
+                        The Document Object Model (DOM) is a way for computers to understand and interact with HTML and XML documents. </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200 mb-[13px]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium"> How do you select an element from the DOM?
+
+                    </div>
+                    <div class="collapse-content">
+                      <p>const element = document.getElementById('myDiv');
+                        console.log(element); 
+                        </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-base-200 mb-[13px]">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                      <p>Event delegation is a technique in JavaScript that allows you to manage events more efficiently by using a single event listener on a parent element rather than adding separate listeners to each child element. </p>
+                    </div>
+                    
+                      </div>
+                      <div>
+                        <div class="collapse collapse-arrow bg-base-200 mb-[13px]">
+                          <input type="radio" name="my-accordion-2" />
+                          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                          <div class="collapse-content">
+                            <p>You can manipulate an element's attributes using `setAttribute`, `getAttribute`, and `removeAttribute`, and change its styles using the `style` property in the DOM.</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        <!-- 
+How do you select an element from the DOM?
+What is event delegation in the context of the DOM, and why is it useful?
+How do you manipulate an element's attributes and styles using the DOM? -->
+    </main>
 </body>
 </html>
